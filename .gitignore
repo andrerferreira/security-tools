@@ -1,0 +1,7 @@
+# Ignore everything
+*
+
+# Except the following
+!.gitignore
+!README.md
+!update-filenames-gitignore.sh
