@@ -97,3 +97,9 @@ done
 echo "Added $totalInserts new filename(s) and removed $totalRemovals from .gitignore"
 echo "-------------------------------------------"
 echo
+
+
+if [ $totalInserts > 0 ] || [ $totalRemovals> 0 ]; then
+  $(git add .gitignore)
+fi
+
