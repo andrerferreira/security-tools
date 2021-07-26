@@ -59,7 +59,7 @@ do
   esac
 done
 
-echo "-------------------------------------------"
+echo "----------------------------------------------------------------------"
 echo "Updating .gitignore within pre-commit hook"
 
 insert=false
@@ -94,12 +94,15 @@ do
   fi
 done
 
-echo "Added $totalInserts new filename(s) and removed $totalRemovals from .gitignore"
-echo "-------------------------------------------"
-echo
+
+echo "Added ${totalInserts} new filename(s) and removed ${totalRemovals} from .gitignore"
 
 
 if [ $totalInserts > 0 ] || [ $totalRemovals> 0 ]; then
   $(git add .gitignore)
+  echo "Updated .gitignore staged as to commit changes"
 fi
+
+echo "----------------------------------------------------------------------"
+echo
 
