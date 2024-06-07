@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# Copyright 2021 André Ferreira
+# Copyright 2021-2024 André Ferreira
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -38,7 +38,7 @@ Help()
 ################################################################################
 Version()
 {
-   echo "Version 1.0.1, 2021 @Copyright André Ferreira"
+   echo "Version 1.0.1, 2021-2024 @Copyright André Ferreira"
    echo
 }
 
